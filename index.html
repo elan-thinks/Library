@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Assets/books.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <title>PuffPages</title>
+</head>
+<body>
+    <header>
+        <div class="account">
+            <h1>Luna Na</h1>
+
+            <img src="Assets/cute-pumpkin.png" alt="">
+        </div>
+        <div class="cont-2">
+            <div class="logo">
+                <img src="Assets/littleBook.png" alt="">
+                <h2>☁️ PuffPages</h2>
+            </div>
+            
+            <span id="addBook">+ New</span>
+            <div class="back"></div>
+            <dialog >
+                <div class="div-dialog">
+                    <h2>Add your New Book</h2>
+                    
+                    <label for="title">Book Title</label>
+                    <input type="text" id="title">
+
+                    <label for="author">Author</label>
+                    <input type="text" id="author">
+
+                    <label for="pageNum">Page Number</label>
+                    <input type="text" id="pageNum">
+
+                    <label for="genre-list">Genre</label>
+                    <select name="genre" id="genre-list">
+                        <option value="Business">Business</option>
+                        <option value="Psychology">Psychology</option>
+                        <option value="Self-Help">Self-Help</option>
+                        <option value="Dystopian">Dystopian</option>
+                        <option value="Classic">Classic</option>
+                        <option value="Fantasy">Fantasy</option>
+                        <option value="Business">Business</option>
+                      </select>
+                      <button id="addbtn">Add</button>
+                </div>
+            </dialog>
+        </div>
+      
+       
+    </header>
+        <div class="books">
+            <table id="bookTable">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Pages</th>
+                        <th>Genre</th>
+                        <th>Seen</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+            </table>
+        </div>
+   
+
+    <script src="script.js"></script>
+</body>
+</html>

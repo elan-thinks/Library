@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 25% 75%;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    /* background-color: black; */
+
+}
+header{
+   padding: 15px 1px;  
+   display: flex;
+   align-items: center;
+   flex-direction: column;  
+    grid-column: 1/3;
+}
+.cont-2{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 33px;
+    width: 55%;
+    min-width: 700px;
+    padding: 22px 55px;
+    border-radius: 12px;
+    justify-content: space-between;
+    background-color: red;
+
+}
+.logo img{
+    padding: 7px;
+    border-radius:50%;
+    background-color: rgb(240, 229, 229);
+    box-shadow: 0 0 40px #ada5a5;
+    border: 2px solid rgb(224, 183, 179);
+
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+
+}
+.cont-2 span{
+    color: white;
+    cursor: pointer;
+    letter-spacing: 3px;
+    font-weight:900;
+    padding: 10px;
+    border-radius:5px;
+    box-shadow: 0 0 22px #74706f ;
+    background-color: red;
+}
+.account{
+    color: rgb(230, 17, 17);
+
+    display: flex;
+    align-items: center;
+    gap: 33px;
+    padding: 10px 44px;
+    justify-content: end;
+    width: 60%;
+    min-width: 700px;
+}
+.account img{
+    padding: 2px;
+    border-radius:50%;
+    background-color: rgb(240, 229, 229);
+    box-shadow: 0 0 40px #ebe5e5;
+    border: 2px solid rgb(238, 228, 227);
+}
+
+.genre{
+    grid-row: 2/3;
+    background-color: rgb(238, 238, 238);
+}
+
+.books{
+    grid-column: 1/3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#bookTable{
+    width: 55%;
+    border-radius: 24px;
+    padding:15px ;
+    background: #f4f6fd;
+    box-shadow: 0 0 44px #d4d5d6 ;
+    border: 2px solid #e3e4e6 ;
+}
+tr{
+    height: 55px;
+    
+}
+
+thead tr th{
+    padding: 22px;
+    font-size: 1.5rem;
+    border: 2px solid rgb(219, 202, 202);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    /* border-collapse: collapse; */
+
+
+}
+th, td {
+    border: 1px solid #f4f6fd;
+    padding: 8px;
+    text-align: left;
+    padding: 7px;
+    transition: 5s ease-in-out linear;
+
+}
+tbody tr td{
+    text-align: start;
+    padding: 11px 37px;
+    /* background: #b2bee7; */
+
+}
+td:hover{
+    color: #a2afe0;
+    transform: scale(1.03);
+}
+
+th {
+    text-align: left;
+    
+    background-color: #f2f2f2;
+}
+
+button {
+    /* background-color: red; */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.back{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: black;
+    opacity: 0.5;
+
+}
+ dialog{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    height: 500px;
+    padding: 22px 47px;
+    border: 2px solid rgb(163, 140, 140);
+    border-radius: 12px;
+    transform: translate(-50%,-50%);
+    background-color: #ffffff;
+    box-shadow: 0 0 40px rgb(206, 200, 200);
+ }
+.div-dialog{
+    position: relative;
+    display: flex;
+    padding: 34px;
+    gap: 1px;
+    justify-content: center;
+    flex-direction: column;
+    width: 340px;
+    height: 458px;
+}
+dialog label{
+    color: #a2afe0;
+    margin-top: 22px;
+}
+dialog input{
+    font-size: 1rem;
+     padding: 2px 12px;
+    height: 4vh;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline-style: none;
+    border-color: #ca310b;
+
+}
+dialog select{
+    height: 4vh;
+    font-size: 1rem;
+    padding: 2px 12px;
+    outline-style: none;
+
+    border-color: #a2afe0;
+    background-color: #ffffff;
+}
+#addbtn{
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    width: 200px;
+    height: 5vh;
+    margin-top: 22px;
+    margin-left: 40px;
+    border-radius: 12px;
+
+    background-color: #e77a5e;
+
+}
