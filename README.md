@@ -13,7 +13,7 @@ Built with **JavaScript**, **HTML**, and **CSS**.
 ### 🖼️ Preview
 
 > 
-![alt text](Assets/preview-2.png)
+![alt text](Assets/preview.png)
 
 ---
 
