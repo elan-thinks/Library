@@ -97,6 +97,7 @@ function Book() {
       <td>${book.author}</td>
       <td>${book.pages}</td>
       <td>${book.genre}</td>
+   
       <td><img src="${book.seen}" onclick="seen_status(${i})" style="width: 20px; cursor: pointer; z-index:99999;"></td>
       <td><button onclick="deleteRow(${i})">❌</button></td>
     `;

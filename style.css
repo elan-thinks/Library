@@ -61,7 +61,9 @@ header{
     font-weight:900;
     padding: 10px;
     border-radius:5px;
-    box-shadow: 0 0 22px #74706f ;
+    /* box-shadow: 0 5px 22px #9b8c8c ; */
+    box-shadow: 0 5px 22px #ecb1b1 ;
+
     background-color: red;
 }
 .account{
