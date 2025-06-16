@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +12,8 @@ body{
     display: grid;
     grid-template-rows: 25% 75%;
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    /* background-color: black; */
+    /* background-color: rgb(231, 209, 209); */
+    background-color: rgb(238, 230, 230);
 
 }
 header{
@@ -18,6 +22,8 @@ header{
    align-items: center;
    flex-direction: column;  
     grid-column: 1/3;
+    font-family: "Edu NSW ACT Hand Pre", cursive;
+
 }
 .cont-2{
     color: white;
@@ -47,7 +53,8 @@ header{
 
 
 }
-.cont-2 span{
+
+.cont-2  #addBook{
     color: white;
     cursor: pointer;
     letter-spacing: 3px;
@@ -62,7 +69,8 @@ header{
 
     display: flex;
     align-items: center;
-    gap: 33px;
+    gap: 33px;     font-family: "Edu NSW ACT Hand Pre", cursive;
+
     padding: 10px 44px;
     justify-content: end;
     width: 60%;
@@ -162,14 +170,15 @@ button {
     top: 50%;
     left: 50%;
     width: 450px;
-    height: 500px;
-    padding: 22px 47px;
+    height: 540px;
+    padding: 2px 47px;
     border: 2px solid rgb(163, 140, 140);
     border-radius: 12px;
     transform: translate(-50%,-50%);
     background-color: #ffffff;
     box-shadow: 0 0 40px rgb(206, 200, 200);
  }
+ 
 .div-dialog{
     position: relative;
     display: flex;
@@ -178,8 +187,21 @@ button {
     justify-content: center;
     flex-direction: column;
     width: 340px;
-    height: 458px;
+    height: 498px;
+    /* border: 2px solid red; */
 }
+#closeDialog{
+    /* position: absolute; */
+    text-align: end;
+    width: 300px;
+    font-weight: 800;
+    font-size: 23px;
+    padding: -11px 18px;
+    cursor: pointer; 
+    /* border: 2px solid red; */
+
+}
+
 dialog label{
     color: #a2afe0;
     margin-top: 22px;
@@ -206,13 +228,18 @@ dialog select{
 }
 #addbtn{
     font-size: 1.1rem;
+    font-weight: 800;
     letter-spacing: 2px;
-    width: 200px;
-    height: 5vh;
-    margin-top: 22px;
-    margin-left: 40px;
+    width: 150px;
+    height: 8vh;
+    /* margin-top: 22px; */
+    /* margin-left: 40px; */
+    margin: 21px 55px;
     border-radius: 12px;
-
-    background-color: #e77a5e;
+    background-color: #e65d3b;
+}
+#addbtn:hover{
+    letter-spacing: 4px;
+    background-color: #99432e;
 
 }

@@ -126,6 +126,7 @@ function addBookToLibrary() {
   const addBookBtn = document.querySelector("#addBook");
   const addbtn = document.querySelector("#addbtn");
   const bkg = document.querySelector(".back");
+  const closeDialog = document.querySelector("#closeDialog");
 
   let title = document.getElementById("title");
   let author = document.getElementById("author");
@@ -160,6 +161,11 @@ function addBookToLibrary() {
       Book();
     }
   });
+  closeDialog.addEventListener('click',()=>{
+    dialog.close();
+    bkg.style.display = "none";
+
+  })
 }
 
 // Initial render
