@@ -98,8 +98,8 @@ function Book() {
       <td>${book.pages}</td>
       <td>${book.genre}</td>
    
-      <td><img src="${book.seen}" onclick="seen_status(${i})" style="width: 20px; cursor: pointer; z-index:99999;"></td>
-      <td><button onclick="deleteRow(${i})">❌</button></td>
+      <td><img id= "read" src="${book.seen}" onclick="seen_status(${i})"></td>
+      <td><button id="delete" onclick="deleteRow(${i})">❌</button></td>
     `;
 
     if (i % 2 === 0) row.style.background = "rgb(233, 217, 217)";

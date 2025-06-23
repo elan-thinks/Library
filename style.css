@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&display=swap');
 
 *{
@@ -8,34 +7,39 @@
 }
 body{
     width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 25% 75%;
+    min-height: 100vh;
+     gap: 9px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    /* background-color: rgb(231, 209, 209); */
     background-color: rgb(238, 230, 230);
 
 }
 header{
-   padding: 15px 1px;  
    display: flex;
+   flex-wrap: wrap;
+   width: 900px;
    align-items: center;
    flex-direction: column;  
     grid-column: 1/3;
+    /* border: 2px solid red; */
     font-family: "Edu NSW ACT Hand Pre", cursive;
 
 }
 .cont-2{
+    
     color: white;
     display: flex;
     align-items: center;
     gap: 33px;
-    width: 55%;
-    min-width: 700px;
-    padding: 22px 55px;
+    width: 95%;
+    padding: 12px 3px;
     border-radius: 12px;
     justify-content: space-between;
-    background-color: red;
+    background-color: rgb(238, 87, 87);
 
 }
 .logo img{
@@ -60,23 +64,23 @@ header{
     letter-spacing: 3px;
     font-weight:900;
     padding: 10px;
+    margin-right: 5px;
     border-radius:5px;
-    /* box-shadow: 0 5px 22px #9b8c8c ; */
-    box-shadow: 0 5px 22px #ecb1b1 ;
+    height: 6vh;
 
-    background-color: red;
+
 }
 .account{
     color: rgb(230, 17, 17);
-
+    top: 0;
     display: flex;
     align-items: center;
-    gap: 33px;     font-family: "Edu NSW ACT Hand Pre", cursive;
+    gap: 33px;    
+    font-family: "Edu NSW ACT Hand Pre", cursive;
 
     padding: 10px 44px;
     justify-content: end;
-    width: 60%;
-    min-width: 700px;
+    width: 90%;
 }
 .account img{
     padding: 2px;
@@ -93,47 +97,51 @@ header{
 
 .books{
     grid-column: 1/3;
-
+    /* border: 5px solid rgb(202, 189, 10); */
+    width: 850px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
 #bookTable{
-    width: 55%;
+    height: auto;
     border-radius: 24px;
-    padding:15px ;
+    padding:18px ;
     background: #f4f6fd;
     box-shadow: 0 0 44px #d4d5d6 ;
     border: 2px solid #e3e4e6 ;
+
 }
-tr{
-    height: 55px;
+/* tr{
+    height: 55%
     
-}
+} */
 
 thead tr th{
+
     padding: 22px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     border: 2px solid rgb(219, 202, 202);
     border-top: none;
     border-left: none;
     border-right: none;
-    /* border-collapse: collapse; */
-
-
 }
 th, td {
     border: 1px solid #f4f6fd;
-    padding: 8px;
+    font-size: 1.1rem;
     text-align: left;
-    padding: 7px;
+    padding: 20px;
     transition: 5s ease-in-out linear;
 
 }
 tbody tr td{
     text-align: start;
-    padding: 11px 37px;
-    /* background: #b2bee7; */
 
 }
 td:hover{
@@ -146,14 +154,26 @@ th {
     
     background-color: #f2f2f2;
 }
+#read{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px; 
+    cursor: pointer; z-index:99999;
 
+}
+#delete{
+    width: 20px; 
+    cursor: pointer; z-index:99999;
+    
+}
 button {
-    /* background-color: red; */
     color: white;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
 }
+
 
 .back{
     display: none;
@@ -167,6 +187,9 @@ button {
     opacity: 0.5;
 
 }
+
+
+
  dialog{
     position: absolute;
     top: 50%;
@@ -190,17 +213,14 @@ button {
     flex-direction: column;
     width: 340px;
     height: 498px;
-    /* border: 2px solid red; */
 }
 #closeDialog{
-    /* position: absolute; */
     text-align: end;
     width: 300px;
     font-weight: 800;
     font-size: 23px;
     padding: -11px 18px;
     cursor: pointer; 
-    /* border: 2px solid red; */
 
 }
 
@@ -234,8 +254,6 @@ dialog select{
     letter-spacing: 2px;
     width: 150px;
     height: 8vh;
-    /* margin-top: 22px; */
-    /* margin-left: 40px; */
     margin: 21px 55px;
     border-radius: 12px;
     background-color: #e65d3b;
@@ -245,3 +263,90 @@ dialog select{
     background-color: #99432e;
 
 }
+
+
+@media only screen and (max-width: 400px) 
+{ 
+    header{
+        width: 90%;
+
+    }
+    .account{
+        font-size: 0.71rem;
+    }
+    .cont-2{
+        font-size: 0.71rem;
+        padding: 12px 3px;
+    }
+    .logo img{
+        
+        width: 45px;
+    }
+    .books{width: 330px;}
+    #bookTable{ width: 320px; 
+    padding:7px ;
+    border-radius: 12px;
+    font-size: 0.77rem; 
+    /* background-color: lightblue;  */
+} 
+    thead tr th{ 
+        font-size: 0.7rem;
+        padding: 3px; } 
+    tbody tr td{ 
+        font-size: 0.7rem;
+        padding: 7px 1px; } 
+    #read{
+        width: 12px; 
+        cursor: pointer; z-index:99999;
+    
+    }
+    #delete{
+        /* display: inline-flex; */
+        background-color: none;
+        font-size: 7px; 
+        cursor: pointer; z-index:99999;
+        
+    }
+}
+@media only screen and (min-width: 401px )and (max-width :898px) { 
+    header{
+        width: 91%;
+
+    }
+    .account{
+        font-size: 0.71rem;
+    }
+    .cont-2{
+        padding: 12px 3px;
+    }
+    .logo img{
+        
+        width: 45px;
+    }
+    .books{
+        width: 90%;
+        margin: 2px 2px;
+
+    }
+    #bookTable{ 
+        width: 98%;  
+         } 
+    thead tr th{
+        font-size: 1rem;
+         padding: 1px; } 
+    tbody tr td{ 
+        font-size: 0.9rem;
+
+        padding: 10px 1px; }
+    #read{
+        width: 12px; 
+        cursor: pointer; z-index:99999;
+    
+    }
+    #delete{
+        background-color: none;
+        font-size: 7px; 
+        cursor: pointer; z-index:99999;
+        
+    }
+} 
