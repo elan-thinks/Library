@@ -194,7 +194,7 @@ button {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 330px;
+    width: 400px;
     height: 540px;
     padding: 5px 37px;
     border: 2px solid rgb(163, 140, 140);
@@ -221,7 +221,7 @@ button {
 }
 #closeDialog{
     text-align: end;
-    width: 220px;
+    width: 280px;
     font-weight: 800;
     font-size: 23px;
     padding: -11px 18px;
@@ -259,7 +259,7 @@ dialog select{
     letter-spacing: 2px;
     width: 150px;
     height: 8vh;
-    margin: 21px 35px;
+    margin: 21px 63px;
     border-radius: 12px;
     background-color: #e65d3b;
 }
@@ -312,6 +312,15 @@ dialog select{
         cursor: pointer; z-index:99999;
         
     }
+    dialog{
+        width: 330px;
+    }
+    #closeDialog{
+        width: 220px;
+    }
+    #addbtn{
+        margin: 21px 35px;
+    }
 }
 @media only screen and (min-width: 401px )and (max-width :898px) { 
     header{
@@ -354,4 +363,15 @@ dialog select{
         cursor: pointer; z-index:99999;
         
     }
+    dialog{
+        width: 330px;
+    }
+    #closeDialog{
+        width: 220px;
+    }
+    #addbtn{
+        margin: 21px 35px;
+    }
+
+
 } 
